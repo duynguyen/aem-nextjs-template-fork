@@ -17,7 +17,8 @@ import { AdventureClient } from '../../lib/adventures';
 import AdventureCard from '../../components/AdventureCard';
 import getPages from '../../lib/getPages';
 
-const { NEXT_PUBLIC_AEM_HOST, NEXT_PUBLIC_AEM_ROOT } = process.env;
+const NEXT_PUBLIC_AEM_HOST = process.env.NEXT_PUBLIC_AEM_HOST;
+const NEXT_PUBLIC_AEM_ROOT = process.env.NEXT_PUBLIC_AEM_ROOT;
 
 export default function Adventures({ adventures, pages }) {
   return (

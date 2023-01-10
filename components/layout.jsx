@@ -17,7 +17,7 @@ import { useRouter } from 'next/router';
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
-const { NEXT_PUBLIC_URL } = process.env;
+const NEXT_PUBLIC_URL = process.env.NEXT_PUBLIC_URL;
 
 export const siteTitle = 'WKND';
 
@@ -79,19 +79,18 @@ export default function Layout({ children, pages }) {
                   <div className="hidden sm:block sm:ml-6">
                     <div className="flex space-x-4">
                       {pages.map((item) => (
-                        <Link key={item.name} href={item.href}>
-                          <a
-                            aria-current={
-                              isCurrentPage(item.href) ? 'page' : undefined
-                            }
-                            className={classNames(
-                              isCurrentPage(item.href)
-                                ? 'bg-yellow-300 text-gray-700'
-                                : 'text-gray-800 hover:bg-yellow-200 hover:text-gray-700',
-                              'px-3 py-2 rounded-md text-sm font-medium'
-                            )}>
-                            {item.name}
-                          </a>
+                        <Link key={item.name}
+                              href={item.href}
+                              aria-current={
+                                isCurrentPage(item.href) ? 'page' : undefined
+                              }
+                              className={classNames(
+                                isCurrentPage(item.href)
+                                  ? 'bg-yellow-300 text-gray-700'
+                                  : 'text-gray-800 hover:bg-yellow-200 hover:text-gray-700',
+                                'px-3 py-2 rounded-md text-sm font-medium'
+                              )}>
+                          {item.name}
                         </Link>
                       ))}
                     </div>

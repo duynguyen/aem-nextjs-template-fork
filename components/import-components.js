@@ -16,7 +16,7 @@ import { AEMText } from './AEMText'
 import { AEMTitle } from './AEMTitle'
 import { AEMImage } from './AEMImage'
 
-const { NEXT_PUBLIC_AEM_SITE } = process.env;
+const NEXT_PUBLIC_AEM_SITE = process.env.NEXT_PUBLIC_AEM_SITE;
 
 MapTo(`${NEXT_PUBLIC_AEM_SITE}/components/title`)(AEMTitle)
 MapTo(`${NEXT_PUBLIC_AEM_SITE}/components/text`)(AEMText)

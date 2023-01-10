@@ -12,7 +12,7 @@
  */
 
 const { DOMParser } = require('@xmldom/xmldom');
-const { NEXT_PUBLIC_URL} = process.env;
+const NEXT_PUBLIC_URL = process.env.NEXT_PUBLIC_URL;
 
 export default async function handler(req, res) {
   let { path } = req.query;
