@@ -2,7 +2,7 @@
 
 This app demonstrates how to write a simple app rendering AEM Pages and Content fragments in Next JS.  
 
-Adventures are retrieved from AEM as content fragments using AEM Headless GraphQL API.
+Adventures are retrieved from AEM as content fragments using AEM Headless GraphQL API. update
 
 ![adventures](adventures.png "Adventures")
 
