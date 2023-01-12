@@ -10,7 +10,7 @@
  * governing permissions and limitations under the License.
  *
  */
-
+'use client';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';

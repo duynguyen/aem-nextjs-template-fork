@@ -16,6 +16,9 @@ const WebpackAssetsManifest = require('webpack-assets-manifest');
 
 module.exports = {
     reactStrictMode: true,
+    experimental: {
+        appDir: true,
+    },
     async headers() {
         return [
             {
