@@ -10,6 +10,7 @@
     "@adobe/aem-headless-client-js": "^3.1.1",
     "@adobe/aem-react-editable-components": "^2.0.0",
     "@adobe/aem-spa-page-model-manager": "^1.4.0",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
     "@xmldom/xmldom": "^0.8.2",
     "next": "13.1.1",
     "react": "18.2.0",
